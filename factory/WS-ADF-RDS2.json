@@ -1,0 +1,14 @@
+{
+	"name": "WS-ADF-RDS2",
+	"properties": {
+		"globalConfigurations": {
+			"PipelineBillingEnabled": "true"
+		}
+	},
+	"location": "westeurope",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "b26db993-78ef-45c7-90f4-2fc079d3e6e4",
+		"tenantId": "76a2ae5a-9f00-4f6b-95ed-5d33d77c4d61"
+	}
+}

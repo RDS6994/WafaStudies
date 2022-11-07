@@ -1,0 +1,74 @@
+{
+	"name": "P66",
+	"properties": {
+		"activities": [
+			{
+				"name": "P66_df",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "0.12:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "P66_df",
+						"type": "DataFlowReference",
+						"parameters": {
+							"dep": {
+								"value": "@pipeline().parameters.Dep",
+								"type": "Expression"
+							}
+						},
+						"datasetParameters": {
+							"Employees": {
+								"Folder": {
+									"value": "@pipeline().parameters.Folder",
+									"type": "Expression"
+								},
+								"File": {
+									"value": "@pipeline().parameters.File",
+									"type": "Expression"
+								}
+							}
+						}
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"parameters": {
+			"Folder": {
+				"type": "string",
+				"defaultValue": "part66"
+			},
+			"File": {
+				"type": "string",
+				"defaultValue": "employees.csv"
+			},
+			"Folder2": {
+				"type": "string",
+				"defaultValue": "part66"
+			},
+			"File2": {
+				"type": "string",
+				"defaultValue": "employees_2.csv"
+			},
+			"Dep": {
+				"type": "string",
+				"defaultValue": "100"
+			}
+		},
+		"annotations": [],
+		"lastPublishTime": "2022-11-07T12:45:35Z"
+	},
+	"type": "Microsoft.DataFactory/factories/pipelines"
+}
