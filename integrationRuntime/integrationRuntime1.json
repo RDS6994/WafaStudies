@@ -1,0 +1,12 @@
+{
+	"name": "integrationRuntime1",
+	"properties": {
+		"type": "SelfHosted",
+		"typeProperties": {
+			"linkedInfo": {
+				"resourceId": "/subscriptions/c75b7ce8-a4a4-423c-8afa-6dc8b8a20a17/resourcegroups/Wafa_studies_oefening/providers/Microsoft.DataFactory/factories/WS-ADF-RDS/integrationruntimes/integrationRuntime1",
+				"authorizationType": "Rbac"
+			}
+		}
+	}
+}
