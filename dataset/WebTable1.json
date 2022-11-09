@@ -1,0 +1,19 @@
+{
+	"name": "WebTable1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "football_wiki",
+			"type": "LinkedServiceReference"
+		},
+		"folder": {
+			"name": "P94"
+		},
+		"annotations": [],
+		"type": "WebTable",
+		"schema": [],
+		"typeProperties": {
+			"index": 1,
+			"path": "1963–64_Gillingham_F.C._season"
+		}
+	}
+}
