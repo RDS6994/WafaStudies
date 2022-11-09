@@ -1,0 +1,31 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "ParameterizedDataLake",
+			"type": "LinkedServiceReference",
+			"parameters": {
+				"URL_param": "https://wafastoragerds2.dfs.core.windows.net/",
+				"Account_key_param": "VmmeniXz4ZLOI+1hhpjTmrEzIISjSmhdCBbD09n3bo3Jaj+GM9iD5jEsMUxmAbZCtN44GWz25fp9+AStT5lUuw=="
+			}
+		},
+		"folder": {
+			"name": "P94"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "employees.csv",
+				"folderPath": "part66",
+				"fileSystem": "wafastudies"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}
