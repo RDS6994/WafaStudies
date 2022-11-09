@@ -5,11 +5,11 @@
 		"parameters": {
 			"URL_param": {
 				"type": "string",
-				"defaultValue": "https://wafastoragerds2.blob.core.windows.net/wafastudies"
+				"defaultValue": "https://wafastoragerds2.dfs.core.windows.net/"
 			},
 			"AccountKeyParam": {
 				"type": "string",
-				"defaultValue": "DefaultEndpointsProtocol=https;AccountName=wafastoragerds2;AccountKey=VmmeniXz4ZLOI+1hhpjTmrEzIISjSmhdCBbD09n3bo3Jaj+GM9iD5jEsMUxmAbZCtN44GWz25fp9+AStT5lUuw==;EndpointSuffix=core.windows.net"
+				"defaultValue": "VmmeniXz4ZLOI+1hhpjTmrEzIISjSmhdCBbD09n3bo3Jaj+GM9iD5jEsMUxmAbZCtN44GWz25fp9+AStT5lUuw=="
 			}
 		},
 		"annotations": [],
